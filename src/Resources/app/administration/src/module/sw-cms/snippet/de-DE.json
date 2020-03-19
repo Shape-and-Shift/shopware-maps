@@ -1,0 +1,23 @@
+{
+    "sas-maps": {
+        "elements": {
+            "config": {
+                "tab": {
+                    "settings": "Einstellungen",
+                    "popup": "Popup Inhalt"
+                },
+                "label": {
+                    "mapbox-style": "Mapbox Style",
+                    "latitude": "Breitengrad",
+                    "longitude": "Längengrad",
+                    "popup-content": "Popup Inhalt"
+                }
+            },
+            "maps-element": {
+                "label": "Maps Element",
+                "zoomLevel": "Zoom level",
+                "zoomLevelSelect": "Zoom Level auswählen"
+            }
+        }
+    }
+}

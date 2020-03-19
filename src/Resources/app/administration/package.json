@@ -1,0 +1,11 @@
+{
+    "name": "administration",
+    "version": "1.0.0",
+    "private": true,
+    "author": "Shape & Shift",
+    "license": "ISC",
+    "dependencies": {
+        "mapbox-gl": "^1.8.1",
+        "mapbox-gl-geocoder": "^2.0.1"
+    }
+}

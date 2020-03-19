@@ -1,0 +1,47 @@
+{% block sw_cms_element_image_config %}
+<div class="sw-cms-el-config-maps">
+
+    <sw-tabs class="sw-cms-el-config-text__tabs" defaultItem="settings">
+
+        <template slot-scope="{ active }" >
+            <sw-tabs-item :title="$tc('sas-maps.elements.config.tab.settings')"
+                          name="settings"
+                          :activeTab="active">
+                {{ $tc('sas-maps.elements.config.tab.settings') }}
+            </sw-tabs-item>
+
+            <sw-tabs-item :title="$tc('sas-maps.elements.config.tab.popup')"
+                          name="popup"
+                          :activeTab="active">
+                {{ $tc('sas-maps.elements.config.tab.popup') }}
+            </sw-tabs-item>
+        </template>
+
+        <template slot="content" slot-scope="{ active }">
+            <sw-container v-if="active === 'settings'" class="sw-cms-el-config-text__tab-settings">
+                <sw-select-field :placeholder="$tc('sas-maps.elements.maps-element.zoomLevelSelect')" :label="$tc('sas-maps.elements.maps-element.zoomLevel')" v-model="element.config.zoom.value">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </sw-select-field>
+
+                <sw-text-field :label="$tc('sas-maps.elements.config.label.mapbox-style')" placeholder="mapbox://styles/mapbox/light-v10" v-model="element.config.mapboxStyle.value" :copyable="false" :copyableTooltip="false"></sw-text-field>
+
+                <sw-text-field :label="$tc('sas-maps.elements.config.label.latitude')" :placeholder="$tc('sas-maps.elements.config.label.latitude')" v-model="element.config.geoLat.value" :copyable="false" :copyableTooltip="false"></sw-text-field>
+                <sw-text-field :label="$tc('sas-maps.elements.config.label.longitude')" :placeholder="$tc('sas-maps.elements.config.label.longitude')" v-model="element.config.geoLong.value" :copyable="false" :copyableTooltip="false"></sw-text-field>
+
+            </sw-container>
+
+            <sw-container v-if="active === 'popup'" class="sw-cms-el-config-text__tab-popup">
+                <sw-text-editor :label="$tc('sas-maps.elements.config.label.popup-content')" v-model="element.config.description.value"></sw-text-editor>
+            </sw-container>
+        </template>
+
+    </sw-tabs>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+    "name": "storefront",
+    "version": "1.0.0",
+    "private": true,
+    "author": "Shape & Shift",
+    "license": "ISC",
+    "dependencies": {
+        "mapbox-gl": "^1.8.1"
+    }
+}

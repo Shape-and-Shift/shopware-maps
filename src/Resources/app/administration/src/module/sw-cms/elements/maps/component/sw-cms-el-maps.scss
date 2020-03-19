@@ -1,0 +1,32 @@
+.sw-cms-el-maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+    img {
+        max-width: 100%;
+        height: 350px;
+        object-fit: contain;
+    }
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+#geocoder-container > div {
+    min-width: 50%;
+    margin-left: 25%;
+}
+
+.mapboxgl-popup-content {
+    padding: 20px 30px;
+    font-size: 14px;
+    border-radius: 0;
+}
+

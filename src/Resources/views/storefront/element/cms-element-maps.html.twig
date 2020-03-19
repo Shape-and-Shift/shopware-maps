@@ -1,0 +1,12 @@
+{% block element_maps %}
+    <div class="cms-element-maps" style="height: 500px; width: 100%"
+         data-maps="true"
+         data-lat="{{ element.config.geoLat.value }}"
+         data-long="{{ element.config.geoLong.value }}"
+         data-description="{{ element.config.description.value }}"
+         data-mapbox="{{ element.config.mapboxStyle.value }}"
+         data-zoom="{{ element.config.zoom.value }}"
+         data-token="{{ shopware.config.SasMaps.config.mapboxApiKey }}"
+    >
+    </div>
+{% endblock %}
