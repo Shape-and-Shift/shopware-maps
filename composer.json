@@ -1,31 +1,31 @@
 {
-    "name": "sas/maps",
-    "description": "Maps plugin",
-    "version": "v1.0.0",
-    "type": "shopware-platform-plugin",
-    "license": "proprietary",
-    "authors": [
-        {
-            "name": "Shape & Shift",
-            "role": "Manufacturer",
-            "homepage": "https://shapeandshift.dev"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-          "Sas\\Maps\\": "src/"
-        }
-    },
-    "require": {
-        "shopware/core": "6.1.*",
-        "shopware/administration": "6.1.*",
-        "shopware/storefront": "6.1.*"
-    },
-    "extra": {
-        "shopware-plugin-class": "Sas\\Maps\\SasMaps",
-        "label": {
-          "de-DE": "Maps",
-          "en-GB": "Maps"
-        }
+  "name": "sas/maps",
+  "description": "Maps plugin",
+  "version": "v1.0.1",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Shape & Shift",
+      "role": "Manufacturer",
+      "homepage": "https://shapeandshift.dev"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Sas\\Maps\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": "6.1.*",
+    "shopware/administration": "6.1.*",
+    "shopware/storefront": "6.1.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "Sas\\Maps\\SasMaps",
+    "label": {
+      "de-DE": "Maps",
+      "en-GB": "Maps"
+    }
+  }
 }
