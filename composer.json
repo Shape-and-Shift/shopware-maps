@@ -1,7 +1,7 @@
 {
   "name": "sas/maps",
   "description": "Maps plugin",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "type": "shopware-platform-plugin",
   "license": "proprietary",
   "authors": [
