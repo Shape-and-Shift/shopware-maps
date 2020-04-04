@@ -17,9 +17,7 @@
     }
   },
   "require": {
-    "shopware/core": "6.1.*",
-    "shopware/administration": "6.1.*",
-    "shopware/storefront": "6.1.*"
+    "shopware/core": "*"
   },
   "extra": {
     "shopware-plugin-class": "Sas\\Maps\\SasMaps",
