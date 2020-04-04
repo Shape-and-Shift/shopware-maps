@@ -5,6 +5,6 @@
     "author": "Shape & Shift",
     "license": "ISC",
     "dependencies": {
-        "mapbox-gl": "^1.8.1"
+        "mapbox-gl": "^1.9.1"
     }
 }
