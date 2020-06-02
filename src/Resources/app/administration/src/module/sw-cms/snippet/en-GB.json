@@ -11,12 +11,22 @@
                     "latitude": "Latitude",
                     "longitude": "Longitude",
                     "popup-content": "Popup Content"
+                },
+                "error": {
+                    "title": "Mapbox API Key",
+                    "message": "Your Mapbox API key seems to be wrong or you forgot to set it up. Please enter a valid API key within the Maps plugin settings.",
+                    "goToLinkText": "Go to mapbox plugin settings"
                 }
             },
-            "maps-element": {
+            "mapsElement": {
                 "label": "Maps Element",
                 "zoomLevel": "Zoom level",
                 "zoomLevelSelect": "Select zoom level"
+            }
+        },
+        "blocks": {
+            "maps": {
+                "label": "Maps"
             }
         }
     }
