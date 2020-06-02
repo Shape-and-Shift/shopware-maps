@@ -19,7 +19,7 @@
 
         <template slot="content" slot-scope="{ active }">
             <sw-container v-if="active === 'settings'" class="sw-cms-el-config-text__tab-settings">
-                <sw-select-field :placeholder="$tc('sas-maps.elements.maps-element.zoomLevelSelect')" :label="$tc('sas-maps.elements.maps-element.zoomLevel')" v-model="element.config.zoom.value">
+                <sw-select-field :placeholder="$tc('sas-maps.elements.mapsElement.zoomLevelSelect')" :label="$tc('sas-maps.elements.mapsElement.zoomLevel')" v-model="element.config.zoom.value">
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>

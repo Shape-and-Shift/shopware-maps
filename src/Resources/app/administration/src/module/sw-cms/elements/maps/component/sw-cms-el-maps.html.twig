@@ -1,5 +1,27 @@
 {% block sw_cms_element_maps %}
     <div class="sw-cms-el-maps">
-        <div id="map"></div>
+
+        <sw-card :hero="true" :isLoading="isLoading" :large="false" v-if="isEmpty">
+            <sw-alert
+                v-if="isEmpty"
+                variant="error"
+                appearance="default"
+                :title="$tc('sas-maps.elements.config.error.title')"
+                :showIcon="true"
+                closable="false">
+                {{ $tc('sas-maps.elements.config.error.message') }}
+                <br><br>
+
+                <router-link to="/sw/plugin/settings/SasMaps" class="sw-button sw-button--danger">
+                    <span class="sw-button__content">
+                        {{ $tc('sas-maps.elements.config.error.goToLinkText') }}
+                    </span>
+                </router-link>
+            </sw-alert>
+
+        </sw-card>
+
+        <div id="map" v-else></div>
+
     </div>
 {% endblock %}
