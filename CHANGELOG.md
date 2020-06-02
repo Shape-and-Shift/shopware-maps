@@ -1,3 +1,7 @@
+# 1.0.3
+- added API key check
+- added a new CMS block 
+
 # 1.0.2
 - fixed missing mapbox module within storefront
 - fixed shopware version which caused an error while installing the plugin

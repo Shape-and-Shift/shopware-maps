@@ -12,11 +12,9 @@
                 {{ $tc('sas-maps.elements.config.error.message') }}
                 <br><br>
 
-                <router-link to="/sw/plugin/settings/SasMaps" class="sw-button sw-button--danger">
-                    <span class="sw-button__content">
-                        {{ $tc('sas-maps.elements.config.error.goToLinkText') }}
-                    </span>
-                </router-link>
+                <sw-button :routerLink="{ name: 'sw.plugin.settings', params: { namespace: 'SasMaps' } }" variant="danger">
+                    {{ $tc('sas-maps.elements.config.error.goToLinkText') }}
+                </sw-button>
             </sw-alert>
 
         </sw-card>
