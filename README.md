@@ -22,3 +22,11 @@ Now you can use your maps element within your shopping experience.
 ![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1584603445/Bildschirmfoto_2020-03-19_um_09.37.01_pfajbs.png)
 
 ![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1584603448/Bildschirmfoto_2020-03-19_um_09.37.12_e7x3fu.png)
+
+## Changes
+##### Changes 1.0.3
+
+- If there is an error with the API key, or no API key is set you will get an error message.
+- We also added a block for the CMS element.
+
+![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1591095915/Bildschirmfoto_2020-06-02_um_13.52.05_znc9pj.png)
