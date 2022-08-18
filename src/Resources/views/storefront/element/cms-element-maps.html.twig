@@ -1,4 +1,5 @@
 {% block element_maps %}
+  {% set apitoken = config('SasMaps.config.mapboxApiKey') %}
     <div class="cms-element-maps" style="height: 500px; width: 100%"
          data-maps="true"
          data-lat="{{ element.config.geoLat.value }}"
@@ -6,7 +7,7 @@
          data-description="{{ element.config.description.value }}"
          data-mapbox="{{ element.config.mapboxStyle.value }}"
          data-zoom="{{ element.config.zoom.value }}"
-         data-token="{{ shopware.config.SasMaps.config.mapboxApiKey }}"
+         data-token="{{ apitoken }}"
     >
     </div>
 {% endblock %}
