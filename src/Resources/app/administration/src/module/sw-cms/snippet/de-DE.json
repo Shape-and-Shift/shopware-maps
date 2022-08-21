@@ -21,7 +21,9 @@
             "mapsElement": {
                 "label": "Maps Element",
                 "zoomLevel": "Zoom level",
-                "zoomLevelSelect": "Zoom Level auswählen"
+                "zoomLevelSelect": "Zoom Level auswählen",
+		"languageLevel": "Sprache der Karte",
+		"languageLevelSelect": "Sprache auswählen"
             }
         },
         "blocks": {

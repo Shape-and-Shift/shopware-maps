@@ -1,11 +1,19 @@
 {
-    "name": "administration",
-    "version": "1.0.0",
-    "private": true,
-    "author": "Shape & Shift",
-    "license": "ISC",
-    "dependencies": {
-        "mapbox-gl": "^1.8.1",
-        "mapbox-gl-geocoder": "^2.0.1"
-    }
+  "name": "administration",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Shape & Shift",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/mapbox-gl-language": "^1.0.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "mapbox-gl": "^2.9.2"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "description": ""
 }

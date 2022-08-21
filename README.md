@@ -21,7 +21,8 @@ Now you can use your maps element within your shopping experience.
 
 ![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1584603445/Bildschirmfoto_2020-03-19_um_09.37.01_pfajbs.png)
 
-![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1584603448/Bildschirmfoto_2020-03-19_um_09.37.12_e7x3fu.png)
+![](https://res.cloudinary.com/dto7szezw/image/upload/v1661122897/github/MapsSetting1.0.0.4_t3h21k.png)
+
 
 ## Changes
 ##### Changes 1.0.3
@@ -30,3 +31,10 @@ Now you can use your maps element within your shopping experience.
 - We also added a block for the CMS element.
 
 ![](https://res.cloudinary.com/dtgdh7noz/image/upload/v1591095915/Bildschirmfoto_2020-06-02_um_13.52.05_znc9pj.png)
+
+##### Changes 1.0.4
+- Added language selection 
+- Fixed issue #7 plugin working with Shopware 6.4.13.0
+- Fixed issue #6 show Popup Content only if content is set
+- Actualised Mapbox codebase versions 
+- Changed default map location to London 

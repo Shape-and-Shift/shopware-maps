@@ -2,10 +2,11 @@ import template from './sw-cms-el-maps.html.twig';
 import './sw-cms-el-maps.scss';
 
 import mapboxgl from 'mapbox-gl';
-import MapboxGeocoder from 'mapbox-gl-geocoder';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
-import 'mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 const { Mixin } = Shopware;
 
@@ -66,10 +67,15 @@ Shopware.Component.register('sw-cms-el-maps', {
 
                     const map = new mapboxgl.Map({
                         container: 'map',
-                        style: 'mapbox://styles/mapbox/streets-v11',
+//                        style: 'mapbox://styles/mapbox/streets-v11',
+                        style: this.element.config.mapboxStyle.value,
                         center: [this.element.config.geoLat.value, this.element.config.geoLong.value],
-                        zoom: 13
+                        zoom: this.element.config.zoom.value 
                     });
+
+		map.addControl(new MapboxLanguage({
+			  defaultLanguage: this.element.config.language.value 
+			  }));
 
                     const marker = new mapboxgl.Marker().setLngLat([this.element.config.geoLat.value, this.element.config.geoLong.value]).addTo(map);
 
@@ -78,9 +84,11 @@ Shopware.Component.register('sw-cms-el-maps', {
                         mapboxgl: mapboxgl
                     });
 
+
                     map.addControl(geocoder, 'top-left');
 
                     map.on('load', () => {
+
                         geocoder.on('result', (ev) => {
                             this.element.config.geoLat.value = ev.result.geometry.coordinates[0];
                             this.element.config.geoLong.value = ev.result.geometry.coordinates[1];
@@ -89,15 +97,20 @@ Shopware.Component.register('sw-cms-el-maps', {
                         });
                     });
 
+		if (this.element.config.description.value){
                     const popup = new mapboxgl.Popup({ closeOnClick: false, offset: 40 })
                         .setLngLat([this.element.config.geoLat.value, this.element.config.geoLong.value])
                         .setHTML(this.element.config.description.value)
                         .addTo(map);
+			};
+
                 })
                 .catch((error) => {
                     this.isEmpty = true;
                     this.isLoading = false;
                 });
+
+
         }
     }
 });
