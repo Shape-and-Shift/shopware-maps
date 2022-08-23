@@ -66,8 +66,7 @@ Shopware.Component.register('sw-cms-el-maps', {
                     mapboxgl.accessToken = token;
 
                     const map = new mapboxgl.Map({
-                        container: 'map',
-//                        style: 'mapbox://styles/mapbox/streets-v11',
+                        container: this.element.id,
                         style: this.element.config.mapboxStyle.value,
                         center: [this.element.config.geoLat.value, this.element.config.geoLong.value],
                         zoom: this.element.config.zoom.value 
