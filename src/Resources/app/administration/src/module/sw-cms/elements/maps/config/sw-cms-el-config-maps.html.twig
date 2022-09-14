@@ -29,6 +29,23 @@
                     <option value="14">14</option>
                     <option value="15">15</option>
                 </sw-select-field>
+		
+		<!-- https://docs.mapbox.com/data/tilesets/reference/mapbox-streets-v8/#name-text--name_lang-code-text -->
+                <sw-select-field :placeholder="$tc('sas-maps.elements.mapsElement.languageLevelSelect')" :label="$tc('sas-maps.elements.mapsElement.languageLevel')" v-model="element.config.language.value">
+                    <option value="ar">Arabic</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ru">Russian</option>
+                    <option value="zh-Hans">Simplified Chinese</option>
+                    <option value="zh-Hant">Traditional Chinese</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="vi">Vietnamese</option>
+                </sw-select-field>
 
                 <sw-text-field :label="$tc('sas-maps.elements.config.label.mapbox-style')" placeholder="mapbox://styles/mapbox/light-v10" v-model="element.config.mapboxStyle.value" :copyable="false" :copyableTooltip="false"></sw-text-field>
 

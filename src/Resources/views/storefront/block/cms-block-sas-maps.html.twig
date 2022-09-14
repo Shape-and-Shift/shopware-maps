@@ -1,0 +1,6 @@
+{% block block_sas_maps %}
+    {% set element = block.slots.getSlot('sasMaps') %}
+    <div data-cms-element-id="{{ element.id  }}" style="width: 100%;">
+        {% sw_include "@Storefront/storefront/element/cms-element-maps.html.twig" with { 'element': element } %}
+    </div>
+{% endblock %}

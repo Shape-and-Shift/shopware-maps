@@ -1,4 +1,5 @@
 {% block sw_cms_element_maps %}
+
     <div class="sw-cms-el-maps">
 
         <sw-card :hero="true" :isLoading="isLoading" :large="false" v-if="isEmpty">
@@ -18,8 +19,7 @@
             </sw-alert>
 
         </sw-card>
-
-        <div id="map" v-else></div>
+        <div :id="element.id" v-else></div>
 
     </div>
 {% endblock %}

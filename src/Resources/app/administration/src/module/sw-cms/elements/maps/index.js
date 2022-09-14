@@ -11,15 +11,19 @@ Shopware.Service('cmsService').registerCmsElement({
     defaultConfig: {
         geoLat: {
             source: 'static',
-            value: 0
+            value: -0.15833
         },
         geoLong: {
             source: 'static',
-            value: 0
+            value: 51.52333
         },
         zoom: {
             source: 'static',
-            value: 10
+            value: 9
+        },
+        language: {
+            source: 'static',
+            value: 'en'
         },
         mapboxStyle: {
             source: 'static',
