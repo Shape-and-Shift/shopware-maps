@@ -5,7 +5,7 @@
     "author": "Shape & Shift",
     "license": "ISC",
     "dependencies": {
-        "mapbox-gl": "^1.8.1",
+        "mapbox-gl": "^1.13.3",
         "mapbox-gl-geocoder": "^2.0.1"
     }
 }
